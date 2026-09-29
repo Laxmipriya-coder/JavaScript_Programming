@@ -21,4 +21,23 @@
 // }
 // reverseString("Laxmipriya");
 
-// 4.
+// Another Way
+// function reverseStr(str){
+//     return str.split("").reverse().join("")
+// }
+// console.log(reverseStr("Laxmipriya"));
+
+// write a js code to check a given string is a palindrome or not
+function reverseString(str){
+    let res = "";
+    for(let i=str.length-1; i>=0; i--){
+        res += str[i]
+    }
+    if(res==str){
+        console.log("It is a palindrome ");
+    }
+    else{
+        console.log("It is not a palindrome");
+    }
+}
+reverseString("madam");
