@@ -50,7 +50,14 @@
 // console.log(res);
 
 
-let arr = [1,2,3,4,5,6]
-let res = arr.reduce((acc,ele)=> acc * ele ,1)
-console.log(arr);
+// let arr = [1,2,3,4,5,6]
+// let res = arr.reduce((acc,ele)=> acc * ele ,1)
+// console.log(arr);
+// console.log(res);
+
+
+let a = [1,2,3,4,5];
+let res = a.some(ele => ele>4);
 console.log(res);
+let res2 = a.every(ele => ele>4);
+console.log(res2);
