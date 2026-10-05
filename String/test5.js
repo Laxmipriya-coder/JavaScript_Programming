@@ -91,21 +91,21 @@
 
 // 15.Find the most frequent character
 // "Javascript" ---> "a"
-function mostFrequentChar(str){
-    let freq = {}
-    let i =0;
-    while(i<str.length){
-        let char = str[i];
-        freq[char] = (freq[char] || 0) + 1;
-        i++
-    }
-    let max =1;
-    let char = "";
-    for(const key in freq){
-        if(freq[key]>max){
-            char = key
-        }
-    }
-    console.log(char);
-}
-mostFrequentChar("Javascript")
+// function mostFrequentChar(str){
+//     let freq = {}
+//     let i =0;
+//     while(i<str.length){
+//         let char = str[i];
+//         freq[char] = (freq[char] || 0) + 1;
+//         i++
+//     }
+//     let max =1;
+//     let char = "";
+//     for(const key in freq){
+//         if(freq[key]>max){
+//             char = key
+//         }
+//     }
+//     console.log(char);
+// }
+// mostFrequentChar("Javascript")
