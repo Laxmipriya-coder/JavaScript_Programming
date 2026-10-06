@@ -56,8 +56,76 @@
 // console.log(res);
 
 
-let a = [1,2,3,4,5];
-let res = a.some(ele => ele>4);
-console.log(res);
-let res2 = a.every(ele => ele>4);
-console.log(res2);
+// let a = [1,2,3,4,5];
+// let res = a.some(ele => ele>4);
+// console.log(res);
+// let res2 = a.every(ele => ele>4);
+// console.log(res2);
+
+// arr.push(50);
+// arr.pop();
+// arr.unshift(5);
+// arr.shift();
+// arr.splice(2,0,"Hiiii");
+// let arr = [10,20,30,40,10];
+// let res = arr.indexOf(100)
+// console.log(res);
+// console.log(arr);
+
+// arr.push(50);
+// arr.pop();
+// arr.unshift(1000);
+// arr.shift();
+// arr.splice(1,2,"Hello","Bye","Hiiii")
+// console.log(arr);
+
+// let arr = [10,20,30,40,20];
+// // console.log(arr.indexOf(20));
+// console.log(arr.lastIndexOf(20));
+// let res = arr.find((ele)=> ele > 20)
+// console.log(res);
+// let res2 = arr.findLast((ele)=> ele > 20)
+// console.log(res2);
+
+
+// let arr2 = [50,60,70];
+// console.log(arr2.concat(arr));
+
+
+// let res = arr.slice(1,4);
+// console.log(res);
+// console.log(arr);
+// let arr = [10,20,30,40];
+// console.log(arr.join(" * "))
+
+// let arr = [10,20,30,40,[1,2,["a","b","c"],3,4],50];
+// let res = arr.flatMap(ele=>ele);
+// console.log(res);
+
+// let arr = [5,4,2,1,8,9,20]
+// arr.sort((a,b)=> a-b);
+// console.log(arr);
+
+// let res = arr.toSorted((a,b)=> a-b);
+// console.log(arr);
+// console.log(res);
+
+// let arr = [5,4,2,1,8,9,20]
+// arr.reverse();
+// console.log(arr);
+// let res = arr.toReversed();
+// console.log(res);
+// console.log(arr);
+
+// let arr = [10,20,30,40];
+// console.log(arr2.toString());
+// console.log(arr.toString());
+// console.log(arr[0],arr[1]);
+// console.log(arr.at(0),arr.at(-1));
+
+let arr = [10,20,30,40];
+// console.log(Array.isArray(arr));
+// console.log(Array.from(arr));
+
+let str = "Laxmi"
+console.log(Array.of(arr));
