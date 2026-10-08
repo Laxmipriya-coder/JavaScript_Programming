@@ -115,21 +115,22 @@
 
 // 10.REMOVE DUPLICATE VALUES IN AN ARRAY AND CREATE AN UNIQUE ARRAY CONTAINING UNIQUE VALUE
 
-let arr = [10,30,20,40,20,10,70,80]
-let copy = [];
-let uni = [];
-let obj = {};
-for(let i=0; i<arr.length; i++){
-    let digit = arr[i];
-    obj[digit] = (obj[digit] || 0 ) + 1
-}
-for(let key in obj){
-    if(obj[key]> 1){
-        copy[copy.length] = key
-    }
-    else{
-        uni[uni.length] = key
-    }
-}
+// let arr = [10,30,20,40,20,10,70,80]
+// let copy = [];
+// let uni = [];
+// let obj = {};
+// for(let i=0; i<arr.length; i++){
+//     let digit = arr[i];
+//     obj[digit] = (obj[digit] || 0 ) + 1
+// }
+// for(let key in obj){
+//     if(obj[key]> 1){
+//         copy.push(key);
+//     }
+//     else{
+//         uni.push(key)
+//     }
+// }
 
-console.log(uni);
+// console.log(uni);
+// console.log(y);

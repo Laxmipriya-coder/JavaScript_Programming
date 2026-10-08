@@ -58,3 +58,8 @@ findLast()	    undefined
 30. Array.isArray() --- it checks the whether a value is an array.
 31. Array.from() --- it creates an array from an iterable or array like object.
 32. Array.of() --- it creates a new array from the given values.
+
+
+# What is Recursion
+
+when function call itself to solve a problem by breaking into smaller version of the same problem.
