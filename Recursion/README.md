@@ -1,5 +1,3 @@
  # Recursion
-Base Case
-if base case is not given recursion goes infinite times
-Recursive Case
-if 
+Recursion is when a function call itself to solve a smaller version of the problem.
+Every Recursion function has two parts 
