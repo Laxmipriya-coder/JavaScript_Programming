@@ -37,13 +37,6 @@
 
 // ANOTHER WAY
 
-// function power(n){
-//     if(n==1)
-//         return 6;
-//     return 6 * power (n-1);
-// }
-// console.log(power(5))
-
 // ANOTHER WAY
 // When we have to give only one number
 // function power(n,exponent = n){
