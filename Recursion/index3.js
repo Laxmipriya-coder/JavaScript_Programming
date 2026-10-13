@@ -57,16 +57,34 @@
 
 // 4.FIND THE AVERAGE OF EVERY K CONSECUTIVE ELEMENTS LET ARR = [2,4,6,8,10] LET K=3; OUTPUT 4,6,8
 // EXPLANATION THE WINDOW SUMS ARE 12, 18 AND 24 DIVIDE EACH BY 3;
- function element(arr,k){
-    let sum = 0;
-    for(let i=0; i<k; i++){
-        sum += arr[i]
-    }
-    let avg = sum/k
-    console.log(avg);
-    for(let i=k; i<arr.length; i++){
-        sum = sum + arr[i] - arr[i-k];
-        console.log(sum/k);
-    }
-}
-element([2,4,6,8,10],3);
+//  function element(arr,k){
+//     let sum = 0;
+//     for(let i=0; i<k; i++){
+//         sum += arr[i]
+//     }
+//     let avg = sum/k
+//     console.log(avg);
+//     for(let i=k; i<arr.length; i++){
+//         sum = sum + arr[i] - arr[i-k];
+//         console.log(sum/k);
+//     }
+// }
+// element([2,4,6,8,10],3);
+
+// 6.FIND THE FIRST WINDOW WHOSE SUM IS GREATER THAN A TARGET LET ARR = [1,2,3,4,5] ; LET K = 2; LET TAR = 6; OUTPUT=[3,4];
+// function greatertarget(arr,k){
+//     let sum = 0;
+//     for(let i=0; i<k; i++){
+//         sum += arr[i];
+//     }
+//     console.log(sum);
+//     let tar = 6;
+//     for(let i=k; i<arr.length;i++){
+//         sum = sum + arr[i] - arr[i-k];
+//         if (sum > tar) {
+//             console.log(arr.slice(i - k + 1, i + 1));
+//             return;
+//         }
+//     }
+// }
+// greatertarget([1,2,3,4,5],2)
