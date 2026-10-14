@@ -29,7 +29,6 @@
 //     let minlength = Infinity;
 //     for (let right = 0; right < arr.length; right++) {
 //         sum = sum + arr[right];
-
 //         while (sum >= k) {
 //             let length = right - left + 1;
 //             minlength = Math.min(minlength, length);
@@ -40,4 +39,24 @@
 //     return minlength == Infinity ? 0 : minlength;
 // }
 
-// console.log(findLength([2, 3, 1, 2, 4, 3], 7));
+// console.log(findLength([2, 3, 1, 2, 4, 3], 10));
+
+
+//3. FIND THE LENGTH OF THE LONGEST SUBSTRING THAT CONTAINS NO REPEATED CHARACTERS
+function longestSubstring(str) {
+    let left = 0;
+    let maxLength = 0;
+    let set = new Set();
+    for(let right =0; right <str.length; right++){
+        while(str.has(str[right])){
+            set.delete(str[left]);
+            left ++;
+        }
+        set.add(str[right]);
+        let length = right - left +1;
+        maxLength = Math.max(maxLength,length)
+    }
+    return maxLength;
+}
+
+console.log(longestSubstring("abcabcbb"));   // 3
