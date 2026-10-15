@@ -43,20 +43,25 @@
 
 
 //3. FIND THE LENGTH OF THE LONGEST SUBSTRING THAT CONTAINS NO REPEATED CHARACTERS
-function longestSubstring(str) {
-    let left = 0;
-    let maxLength = 0;
-    let set = new Set();
-    for(let right =0; right <str.length; right++){
-        while(str.has(str[right])){
-            set.delete(str[left]);
-            left ++;
-        }
-        set.add(str[right]);
-        let length = right - left +1;
-        maxLength = Math.max(maxLength,length)
-    }
-    return maxLength;
-}
+// function longestSubstring(str) {
+//     let left = 0;
+//     let maxLength = 0;
+//     let set = new Set();
+//     for(let right =0; right <str.length; right++){
+//         while(set.has(str[right])){
+//             set.delete(str[left]);
+//             left ++;
+//         }
+//         set.add(str[right]);
+//         let length = right - left +1;
+//         maxLength = Math.max(maxLength,length)
+//     }
+//     return maxLength;
+// }
 
-console.log(longestSubstring("abcabcbb"));   // 3
+// console.log(longestSubstring("abcabcbb"));   // 3
+
+function Sum(a,b){
+    return a+b;
+}
+console.log(Sum(5,3));
