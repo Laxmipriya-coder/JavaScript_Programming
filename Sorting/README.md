@@ -99,3 +99,22 @@ for(let i=0; i<arr.length - 1; i++){
   arr[mindex] = temp;
 }
 console.log(arr);
+
+# 3.Insertion Sort
+Insertion Sort takes one element at a time and inserts it into the correct position within the already-sorted portion of the array.
+
+It works similarly to arranging playing cards in your hand.
+# Algorithm
+1. Consider the first element sorted.
+
+2. Take the next element as the key.
+
+3.Compare the key with elements on its left.
+
+4. Shift larger elements one position to the right.
+
+5. Insert the key into the correct position.
+
+6. Repeat until the array is sorted.
+
+Example : 
