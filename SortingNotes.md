@@ -118,3 +118,63 @@ It works similarly to arranging playing cards in your hand.
 6. Repeat until the array is sorted.
 
 Example : 
+
+let arr = [5,3,4,1,2]
+for(let i=1; i<arr.length; i++){
+  let key = arr[i];
+  let j = i-1;
+  while(j>=0 && arr[j] > key){
+    arr[j+1] = arr[j];
+    j--;
+  }
+  arr[j+1] = key;
+}
+console.log(arr);
+
+# 4. Merge Sort
+Merge sort is a divide and conqure sorting algorithm.
+It divides an array into smaller parts, sorts those parts recursively and merges them into one sorted array.
+
+# Algorithm
+1. divide the array into two halves.
+
+2. Continue dividing until each part contains one element.
+
+3. Merge the smaller arrays in sorted order.
+
+4. Continue merging until one sorted array remains.
+
+Example:
+
+function mergeSort(arr) {
+
+  if (arr.length <= 1) {
+    return arr;
+  }
+  let mid = Math.floor(arr.length / 2);
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+}
+
+function merge(left, right) {
+
+  let result = [];
+  let i = 0;
+  let j = 0;
+  while (i < left.length && j < right.length) {
+    if (left[i] <= right[j]) {
+      result.push(left[i]);
+      i++;
+    }
+    else {
+      result.push(right[j]);
+      j++
+    }
+  }
+  return result.concat(left.slice(i), right.slice(j))
+}
+
+console.log(mergeSort([8,3,2,1]))
+
+# Quick Sort

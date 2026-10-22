@@ -144,17 +144,17 @@
 
 
 
-let n = 9;
-let sum = 0;
-let square = n**2;
-while(square>0){
-    let digit = square%10;
-    sum += digit
-    square = Math.floor(square/10);
-}
-if(sum == n){
-    console.log("Neon");
-}
-else{
-    console.log("not");
-}
+// let n = 9;
+// let sum = 0;
+// let square = n**2;
+// while(square>0){
+//     let digit = square%10;
+//     sum += digit
+//     square = Math.floor(square/10);
+// }
+// if(sum == n){
+//     console.log("Neon");
+// }
+// else{
+//     console.log("not");
+// }

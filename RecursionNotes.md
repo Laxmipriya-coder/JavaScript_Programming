@@ -1,6 +1,10 @@
- # Recursion
+# What is Recursion
+when function call itself to solve a problem by breaking into smaller version of the same problem.
+
+# Recursion
 Recursion is when a function call itself to solve a smaller version of the problem.
 Every Recursion function has two parts 
+
 # Set
 --->A  Set is a built-in JavaScript object that stores unique values.
 --->It does not store duplicate values.
