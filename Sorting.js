@@ -1,4 +1,4 @@
-// Bubble Sort
+// BUBBLE SORT
 // let arr = [ 5, 3, 8, 1];
 // for(let i=0; i<arr.length; i++){
 //   for(let j=0; j<arr.length-1 ;j++){
@@ -12,7 +12,7 @@
 // console.log(arr);
 
 
-// Selection Sort
+// SELECTION SORT
 // let arr = [64, 25,12, 22, 11]
 // for(let i=0; i<arr.length - 1; i++){
 //   let mindex = i;
@@ -27,7 +27,7 @@
 // }
 // console.log(arr);
 
-// Insertion Sort
+// INSERTION SORT
 // let arr = [5,3,4,1,2]
 // for(let i=1; i<arr.length; i++){
 //   let key = arr[i];
@@ -40,7 +40,7 @@
 // }
 // console.log(arr);
 
-// Merge Sort
+// MERGE SORT
 // function mergeSort(arr) {
 
 //   if (arr.length <= 1) {
@@ -72,4 +72,48 @@
 
 // console.log(mergeSort([8,3,2,1]))
 
-// Quick Sort
+// QUICK SORT
+// TAKE THE LAST ELEMENT AS PIVOT VALUE
+// function quickSort(arr){
+//     if(arr.length <= 1){
+//         return arr
+//     }
+//     let pivot = arr[arr.length -1];
+//     let left = [];
+//     let right = [];
+//     for(let i=0; i<arr.length -1; i++){
+//         if(arr[i] <= pivot){
+//             left.push(arr[i]);
+//         }
+//         else{
+//             right.push(arr[i]);
+//         }
+//     }
+//     return [...quickSort(left),pivot,...quickSort(right)];
+// }
+// console.log(quickSort([10,7,8,9,1,5]));
+
+
+// TAKE FIRST INDEX AS PIVOT VALUE
+
+// function quickSort(arr){
+//     if(arr.length <= 1){
+//         return arr
+//     }
+//     let pivot = arr[0];
+//     let left = [];
+//     let right = [];
+//     for(let i=1; i<arr.length; i++){
+//         if(arr[i] <= pivot){
+//             left.push(arr[i]);
+//         }
+//         else{
+//             right.push(arr[i]);
+//         }
+//     }
+//     return [...quickSort(left),pivot,...quickSort(right)];
+// }
+// console.log(quickSort([10,7,8,9,1,5]));
+
+
+

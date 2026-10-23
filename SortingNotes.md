@@ -177,4 +177,51 @@ function merge(left, right) {
 
 console.log(mergeSort([8,3,2,1]))
 
-# Quick Sort
+# 5.Quick Sort
+Quick sort is a divide and conqure algorithm that selects a pivot element and partitions the other elements into groups based on their relationship to the pivot.
+
+The smaller elements are placed on one side, and the larger elements are placed on the other side.
+
+# Algorithm
+1. Select a pivot element.
+
+2. Partition the other element into smaller and larger groups.
+
+3. Apply Quick Sort recursively to each group.
+
+4. Combine the sorted groups with the pivot.
+
+Example: 
+function quicksort(arr){
+  if(arr.length <= 1 ){
+    return arr
+  }
+  let pivot = arr[arr.length - 1];
+  let left = [];
+  let right = [];
+  for(let i=0; i<arr.length-1; i++){
+    if(arr[i] <= pivot){
+      left.push(arr[i])
+    }
+    else{
+      right.push(arr[i])
+    }
+  }
+  return [...quicksort(left) , pivot , ...quicksort(right)]
+}
+console.log(quicksort([10,8,7,9,1,5]))
+
+# 6.Heap Sort
+Heap sort uses a binary heap data structure to store elements
+For ascending order, it commonly builds a max heap, where the largest element is at the root.
+
+# Algorithm
+1. Build a max heap from the array.
+
+2. Swap the root with the last element.
+
+3. Reduce the heap size.
+
+4. Restore the max-heap property.
+
+5. Repeat until the array is sorted.
