@@ -226,11 +226,78 @@
 
 
 
+// let arr = [5,1,4,3,2];
+// for(let i=1; i<arr.length; i++){
+//     let key = arr[i];
+//     let j = i-1;
+//     while(j>=0 && arr[j] > key){
+//         arr[j+1] = arr[j];
+//         j--
+//     }
+//     arr[j+1] = key
+// }
+// console.log(arr);
 
 
+// function mergeSort(arr){
+//     if(arr.length <=1){
+//         return arr;
+//     }
+//     let mid = Math.floor(arr.length /2)
+//     let left = mergeSort(arr.slice(0,mid));
+//     let right = mergeSort(arr.slice(mid));
+//     return merge(left,right);
+// }
+// function merge(left,right){
+//     let res = [];
+//     let i=0; 
+//     let j= 0;
+//     while(i<left.length && j<right.length){
+//         if(left[i]<= right[j]){
+//             res.push(left[i]);
+//             i++
+//         }
+//         else{
+//             res.push(right[j]);
+//             j++
+//         }
+//     }
+//     return res.concat(left.slice(i), right.slice(j));
+// }
 
+// console.log(mergeSort([5,2,4,3,1]));
 
-let arr = [5,2,3,1,4]
-for(let i =0;i<arr.length; i++){
+// function quickSort(arr){
+//     if(arr.length <1){
+//         return arr;
+//     }
+//     let pivot = arr[arr.length-1];
+//     let left = [];
+//     let right = [];
+//     for(let i=0; i<arr.length-1; i++){
+//         if(arr[i] <= pivot){
+//             left.push(arr[i]);
+//         }
+//         else{
+//             right.push(arr[i]);
+//         }
+//     }
+//     return [...quickSort(left),pivot,...quickSort(right)];
+// }
+// console.log(quickSort([5,3,2,1,4]));
+
+// function linearSearch(arr,tar){
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i] === tar){
+//             return i;
+//         }
+//     }
+//     return -1
+// }
+// console.log(linearSearch([5,3,2,1,4],3));
+
+function binarySearch(arr,tar){
+    let left = 0; 
+    let right = arr.length -1;
     
 }
